@@ -133,86 +133,46 @@ const Index = () => {
       </section>
 
       <section id="contacts" className="py-20 px-4 bg-white">
-        <div className="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-3xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Контакты</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold mb-6">Свяжитесь с нами</h3>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <Icon name="Phone" size={24} className="text-primary mt-1" />
-                  <div>
-                    <p className="font-semibold">Телефон</p>
-                    <a href="tel:+74951234567" className="text-muted-foreground hover:text-primary transition-colors">
-                      +7 (495) 123-45-67
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <Icon name="Mail" size={24} className="text-primary mt-1" />
-                  <div>
-                    <p className="font-semibold">Email</p>
-                    <a href="mailto:info@profies.ru" className="text-muted-foreground hover:text-primary transition-colors">
-                      info@profies.ru
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <Icon name="MapPin" size={24} className="text-primary mt-1" />
-                  <div>
-                    <p className="font-semibold">Адрес</p>
-                    <p className="text-muted-foreground">
-                      г. Москва, ул. Строительная, д. 15
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <Icon name="Clock" size={24} className="text-primary mt-1" />
-                  <div>
-                    <p className="font-semibold">Режим работы</p>
-                    <p className="text-muted-foreground">
-                      Пн-Пт: 9:00 - 18:00<br />
-                      Сб-Вс: выходной
-                    </p>
-                  </div>
-                </div>
+          <div className="space-y-6 max-w-xl mx-auto">
+            <div className="flex items-start gap-4">
+              <Icon name="Phone" size={24} className="text-primary mt-1" />
+              <div>
+                <p className="font-semibold">Телефон</p>
+                <a href="tel:+74951234567" className="text-muted-foreground hover:text-primary transition-colors">
+                  +7 (495) 123-45-67
+                </a>
               </div>
             </div>
-
-            <Card className="p-8">
-              <h3 className="text-xl font-bold mb-6">Оставить заявку</h3>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <Input
-                    placeholder="Ваше имя"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                  />
-                </div>
-                <div>
-                  <Input
-                    type="tel"
-                    placeholder="Телефон"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    required
-                  />
-                </div>
-                <div>
-                  <Textarea
-                    placeholder="Сообщение"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    rows={4}
-                  />
-                </div>
-                <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
-                  Отправить заявку
-                  <Icon name="Send" size={16} className="ml-2" />
-                </Button>
-              </form>
-            </Card>
+            <div className="flex items-start gap-4">
+              <Icon name="Mail" size={24} className="text-primary mt-1" />
+              <div>
+                <p className="font-semibold">Email</p>
+                <a href="mailto:info@profies.ru" className="text-muted-foreground hover:text-primary transition-colors">
+                  info@profies.ru
+                </a>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <Icon name="MapPin" size={24} className="text-primary mt-1" />
+              <div>
+                <p className="font-semibold">Адрес</p>
+                <p className="text-muted-foreground">
+                  г. Москва, ул. Строительная, д. 15
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <Icon name="Clock" size={24} className="text-primary mt-1" />
+              <div>
+                <p className="font-semibold">Режим работы</p>
+                <p className="text-muted-foreground">
+                  Пн-Пт: 9:00 - 18:00<br />
+                  Сб-Вс: выходной
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
