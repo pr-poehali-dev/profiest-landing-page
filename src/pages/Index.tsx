@@ -145,9 +145,7 @@ const Index = () => {
               <Icon name="Mail" size={24} className="text-primary mt-1" />
               <div>
                 <p className="font-semibold">Email</p>
-                <a href="mailto:info@profies.ru" className="text-muted-foreground hover:text-primary transition-colors">
-                  info@profies.ru
-                </a>
+                <a href="mailto:info@profies.ru" className="text-muted-foreground hover:text-primary transition-colors">er.profies@yandex.ru</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
