@@ -84,13 +84,9 @@ const Index = () => {
             Профессиональное <br />
             <span className="text-primary">строительство</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Реализуем строительные проекты любой сложности с гарантией качества и в срок
           </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
-            Получить консультацию
-            <Icon name="ArrowRight" size={20} className="ml-2" />
-          </Button>
         </div>
       </section>
 
