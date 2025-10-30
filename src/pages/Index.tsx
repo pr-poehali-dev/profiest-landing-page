@@ -159,10 +159,8 @@ const Index = () => {
               <Icon name="Clock" size={24} className="text-primary mt-1" />
               <div>
                 <p className="font-semibold">Режим работы</p>
-                <p className="text-muted-foreground">
-                  Пн-Пт: 9:00 - 18:00<br />
-                  Сб-Вс: выходной
-                </p>
+                <p className="text-muted-foreground">Пн-Пт: 8:00 - 17:00
+Сб-Вс: выходной</p>
               </div>
             </div>
           </div>
