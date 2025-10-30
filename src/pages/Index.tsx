@@ -169,11 +169,6 @@ const Index = () => {
 
       <footer className="bg-gray-900 text-white py-8 px-4">
         <div className="container mx-auto text-center">
-          <img 
-            src="https://cdn.poehali.dev/files/e79d5bf6-8ec0-42f7-bef3-1fae3af29fec.png" 
-            alt="ProfiES" 
-            className="h-10 mx-auto mb-4 brightness-0 invert"
-          />
           <p className="text-gray-400">
             © 2024 Профиес. Все права защищены.
           </p>
